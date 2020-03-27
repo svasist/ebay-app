@@ -35,7 +35,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - Currently the search mock is only set up for a search string 'ca'. So irrespective of the search string, the search dropdown result would be populated from the mocks and remain the same (even though the API calls will contain the current search string).
 
 Eg. Request: GET http://localhost:4200/autocomplete/ca
-    Response: 
+
+    Response:
+    
+    
     {
         "keyword": "ca",
         "autocompleteOptions": [
@@ -49,10 +52,12 @@ Eg. Request: GET http://localhost:4200/autocomplete/ca
             "camaro"
         ]
     }
+    
 
 - For demonstration purposes, the search list and filter list are populated only when the search string is 'card' and the mocks have data to mimic this search string. (even though an API call with the current string will be made, the page would be populated only for the string 'card').
 
 eg. Request: GET http://localhost:4200/search/card
+
     Response: 
     {
         "keyword": "card",
@@ -151,6 +156,7 @@ eg. Request: GET http://localhost:4200/search/card
 - Any applied filters will filter the item list for cards to the items in 'United States'. The API calls would reflect the correct filters but the mock would return just the items in 'United States'.
 
 Request: GET http://localhost:4200/search/card?location=USA
+
 Response: similar format as search
 
 - When the user refreshes, the search parameters would be preserved and search would be re-executed. User can also share the url.
