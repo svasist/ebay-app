@@ -1,0 +1,33 @@
+<div *ngIf="locationFilterData">
+    <label class="font-weight-bold">Location</label>
+    <div *ngFor="let option of locationFilterData?.options">
+        <mat-checkbox [(ngModel)]="locations[option?.value]" [value]="option?.value"
+            (change)="onLocationChange($event)">
+            {{ Country[option?.value] + ' (' + option?.count + ')' }}
+        </mat-checkbox>
+    </div>
+</div>
+<div *ngIf="conditionFilterData" class="mt-3">
+    <label class="font-weight-bold">Condition</label>
+    <div *ngFor="let option of conditionFilterData?.options">
+        <mat-checkbox [(ngModel)]="conditions[option?.value]" [value]="option?.value"
+            (change)="onConditionChange($event)">
+            {{ ItemCondition[option?.value] + ' (' + option?.count + ')' }}
+        </mat-checkbox>
+    </div>
+</div>
+<div *ngIf="filterData?.length > 0" class="mt-3">
+    <span class="font-weight-bold">Price (C $)</span>
+    <div class="row">
+        <mat-form-field class="col-sm-6">
+            <mat-label>Min Price</mat-label>
+            <input matInput type="number" placeholder="" [formControl]="minPriceControl"
+                (blur)="onMinPriceChange($event)">
+        </mat-form-field>
+        <mat-form-field class="col-sm-6">
+            <mat-label>Max Price</mat-label>
+            <input matInput type="number" placeholder="" [formControl]="maxPriceControl"
+                (blur)="onMaxPriceChange($event)">
+        </mat-form-field>
+    </div>
+</div>

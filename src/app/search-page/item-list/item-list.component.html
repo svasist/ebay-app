@@ -1,0 +1,18 @@
+<div class="card mt-3" *ngFor="let searchItem of searchItems">
+    <div class="row p-2">
+        <div class="col-sm-4 text-center">
+            <img [src]="searchItem?.imageUrl" />
+        </div>
+        <div class="col-sm-8">
+            <div class="col-sm-12 font-weight-bold text-primary">
+                {{ searchItem?.title }}
+            </div>
+            <div class="col-sm-12 mt-1">
+                Location: {{ Country[searchItem?.location] }}
+            </div>
+            <div class="col-sm-12 mt-1">
+                Price: <span class="font-weight-bold">{{ searchItem?.price | currency: searchItem?.currency }}</span>
+            </div>
+        </div>
+    </div>
+</div>

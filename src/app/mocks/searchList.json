@@ -1,0 +1,91 @@
+{
+  "keyword": "card",
+  "searchItems": [
+    {
+      "refId": "1",
+      "title": "eBay Canada Gift Card $25, $50, or $100 - email delivery",
+      "imageUrl": "https://picsum.photos/150/150?random=1",
+      "location": "CAN",
+      "price": 50.00,
+      "currency": "CAD",
+      "condition": "new"
+    },
+    {
+      "refId": "2",
+      "title": "DEREK JETER 1992 draft card",
+      "imageUrl": "https://picsum.photos/150/150?random=2",
+      "location": "CAN",
+      "price": 0.99,
+      "currency": "CAD",
+      "condition": "used"
+    },
+    {
+      "refId": "3",
+      "title": "Reggie Jackson Porcelin Signature Series 4 Card Set With Autographs And Cert",
+      "imageUrl": "https://picsum.photos/150/150?random=3",
+      "location": "USA",
+      "price": 361.99,
+      "currency": "CAD",
+      "condition": "notSpecified"
+    },
+    {
+      "refId": "4",
+      "title": "2019 National Treasures Bo Bichette On Card AUTO Autograph # D 58/99 Toronto",
+      "imageUrl": "https://picsum.photos/150/150?random=4",
+      "location": "USA",
+      "price": 1.42,
+      "currency": "CAD",
+      "condition": "new"
+    },
+    {
+      "refId": "5",
+      "title": "2019 Optic CODY MARTIN SP AUTOGRPAH RC Card CHARLOTTE HORNETS",
+      "imageUrl": "https://picsum.photos/150/150?random=5",
+      "location": "USA",
+      "price": 29.00,
+      "currency": "CAD",
+      "condition": "used"
+    },
+    {
+      "refId": "6",
+      "title": "2019 Panini Toronto Raptors NBA Basketball Champions Complete 30 Card Box Set",
+      "imageUrl": "https://picsum.photos/150/150?random=6",
+      "location": "USA",
+      "price": 49.99,
+      "currency": "CAD",
+      "condition": "new"
+    }
+  ],
+  "filters": [
+    {
+      "key": "location",
+      "options": [
+        {
+          "value": "CAN",
+          "count": 21
+        },
+        {
+          "value": "USA",
+          "count": 44
+        }
+      ]
+    },
+    {
+      "key": "condition",
+      "options": [
+        {
+          "value": "new",
+          "count": 33
+        },
+        {
+          "value": "used",
+          "count": 34
+        },
+        {
+          "value": "notSpecified",
+          "count": 12
+        }
+      ]
+    }
+  ]
+}

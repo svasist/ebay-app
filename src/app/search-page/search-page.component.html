@@ -1,0 +1,26 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-4">
+            <img src="../assets/ebay-logo.png" height="60px" />
+        </div>
+        <div class="col-8 text-center">
+            <mat-form-field class="w-100">
+                <input type="text" placeholder="Search Keyword" matInput [formControl]="searchControl"
+                    [matAutocomplete]="auto">
+                <mat-autocomplete #auto="matAutocomplete" (optionSelected)="onSelectionChange($event)">
+                    <mat-option *ngFor="let option of options" [value]="option">
+                        {{option}}
+                    </mat-option>
+                </mat-autocomplete>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <app-filters></app-filters>
+        </div>
+        <div class="col-sm-8">
+            <app-item-list></app-item-list>
+        </div>
+    </div>
+</div>
